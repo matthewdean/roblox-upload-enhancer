@@ -9,5 +9,5 @@
       "js": ["jquery.js", "script.js"]
     }
   ],
-	"permissions": ["tabs", "http://www.roblox.com/", "http://web.roblox.com/"]
+  "permissions": ["http://www.roblox.com/", "http://web.roblox.com/"]
 }
