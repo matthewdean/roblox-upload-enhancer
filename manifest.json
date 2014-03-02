@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Roblox Upload Enhancer",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+			"all_frames": true,
+      "matches": ["http://www.roblox.com/build/upload*",	"http://web.roblox.com/build/upload*"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+	"permissions": ["tabs", "http://www.roblox.com/", "http://web.roblox.com/"]
+}
