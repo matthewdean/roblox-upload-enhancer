@@ -4,7 +4,7 @@
   "version": "0.1.2",
   "content_scripts": [
     {
-			"all_frames": true,
+      "all_frames": true,
       "matches": ["http://www.roblox.com/build/upload*",	"http://web.roblox.com/build/upload*"],
       "js": ["jquery.js", "script.js"]
     }
