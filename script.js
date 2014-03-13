@@ -19,7 +19,8 @@ if (['2', '11', '12', '13'].indexOf(assetTypeId) >= 0) {
 			data.append("groupId", groupId);
 			data.append("__RequestVerificationToken", requestVerificationToken);
 			data.append("file", files[i], files[i].name);
-			data.append("name", files[i].name);
+			var fileNameWithoutExtension = files[i].name.split('.')[0]; // everything up to the first period
+			data.append("name", fileNameWithoutExtension);
 			
 			$.ajax({
 				type: 'POST',
